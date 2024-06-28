@@ -1,0 +1,14 @@
+# root-sync.yaml
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: root-sync
+  namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/sushmatn25/guardian-config-sync-test.git
+    branch: main
+    dir: root
+    auth: none

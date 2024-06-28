@@ -1,0 +1,13 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: frm-staging-admin
+  namespace: frm-staging
+subjects:
+- kind: ServiceAccount
+  name: ns-reconciler-frm-staging
+  namespace: config-management-system
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
