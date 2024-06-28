@@ -5,7 +5,7 @@ metadata:
   namespace: frm-staging
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-frm-staging
+  name: ns-reconciler-frm-staging-repo-sync-frm-staging-21
   namespace: config-management-system
 roleRef:
   kind: ClusterRole

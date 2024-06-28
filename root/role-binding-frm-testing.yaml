@@ -5,7 +5,7 @@ metadata:
   namespace: frm-testing
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-frm-testing
+  name: ns-reconciler-frm-testing-repo-sync-frm-testing-21
   namespace: config-management-system
 roleRef:
   kind: ClusterRole
