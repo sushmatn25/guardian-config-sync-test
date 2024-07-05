@@ -20,4 +20,3 @@ spec:
     # Use the optional field spec.helm.values to override default values.
     # You can use the same format as the default values file to override
     # default values.
-EOF
