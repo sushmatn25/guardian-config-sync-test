@@ -1,8 +1,7 @@
-# root-sync.yaml
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
-  name: root-sync
+  name: root-sync-apps
   namespace: config-management-system
 spec:
   sourceType: git

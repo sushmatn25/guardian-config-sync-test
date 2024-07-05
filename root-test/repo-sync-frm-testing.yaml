@@ -1,0 +1,23 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync-frm-staging
+  namespace: frm-testing
+spec:
+  sourceFormat: unstructured
+  sourceType: helm
+  helm:
+    repo: oci://us-west1-docker.pkg.dev/versa-guardian/helm-charts-app/frm
+    chart: frm
+    version: 0.1.0
+    releaseName: frm
+    namespace: frm-testing
+    # The k8sserviceaccount auth type is available in version 1.17.2 and
+    # later. Use `gcpserviceaccount` if using an older version.
+    # auth: gcpserviceaccount
+    # gcpServiceAccountEmail: GSA_NAME@PROJECT_ID.iam.gserviceaccount.com
+    auth: k8sserviceaccount
+    # Use the optional field spec.helm.values to override default values.
+    # You can use the same format as the default values file to override
+    # default values.
+EOF
