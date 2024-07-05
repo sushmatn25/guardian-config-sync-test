@@ -1,7 +1,7 @@
 apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
-  name: repo-sync-frm-staging
+  name: repo-sync-frm-testing
   namespace: urm-testing
 spec:
   sourceFormat: unstructured
