@@ -11,7 +11,6 @@ spec:
     chart: frm
     version: 0.1.0
     releaseName: frm
-    namespace: frm-testing
     # The k8sserviceaccount auth type is available in version 1.17.2 and
     # later. Use `gcpserviceaccount` if using an older version.
     # auth: gcpserviceaccount
