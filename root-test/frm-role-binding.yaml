@@ -10,3 +10,6 @@ subjects:
 - kind: ServiceAccount
   name: default
   namespace: frm-testing
+- kind: ServiceAccount
+  name: ns-reconciler-frm-testing-repo-sync-frm-testing-21
+  namespace: config-management-system

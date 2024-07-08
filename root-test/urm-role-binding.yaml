@@ -10,3 +10,6 @@ subjects:
 - kind: ServiceAccount
   name: default
   namespace: urm-testing
+- kind: ServiceAccount
+  name: ns-reconciler-urm-testing-repo-sync-urm-testing-21
+  namespace: config-management-system
