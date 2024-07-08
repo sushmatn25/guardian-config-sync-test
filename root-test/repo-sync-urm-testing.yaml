@@ -14,8 +14,8 @@ spec:
     # The k8sserviceaccount auth type is available in version 1.17.2 and
     # later. Use `gcpserviceaccount` if using an older version.
     # auth: gcpserviceaccount
-    # gcpServiceAccountEmail: GSA_NAME@PROJECT_ID.iam.gserviceaccount.com
-    auth: k8sserviceaccount
+    gcpServiceAccountEmail: primary-cluster-us-central1-sa@msb-07-skuntal.iam.gserviceaccount.com
+    #auth: k8sserviceaccount
     # Use the optional field spec.helm.values to override default values.
     # You can use the same format as the default values file to override
     # default values.
