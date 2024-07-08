@@ -13,7 +13,7 @@ spec:
     releaseName: urm
     # The k8sserviceaccount auth type is available in version 1.17.2 and
     # later. Use `gcpserviceaccount` if using an older version.
-    # auth: gcpserviceaccount
+    auth: gcpserviceaccount
     gcpServiceAccountEmail: primary-cluster-us-central1-sa@msb-07-skuntal.iam.gserviceaccount.com
     #auth: k8sserviceaccount
     # Use the optional field spec.helm.values to override default values.
