@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: urm-testing-admin-net
+subjects:
+- kind: ServiceAccount
+  name: ns-reconciler-urm-testing-repo-sync-urm-testing-21
+  namespace: config-management-system
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: net.gke.io
