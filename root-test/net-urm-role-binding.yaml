@@ -1,5 +1,5 @@
 kind: RoleBinding
-apiVersion: rbac.authorization.k8s.io/v1
+apiVersion: net.gke.io/v1
 metadata:
   name: urm-testing-admin-net
 subjects:
