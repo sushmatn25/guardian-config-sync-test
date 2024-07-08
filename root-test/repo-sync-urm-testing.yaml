@@ -7,7 +7,7 @@ spec:
   sourceFormat: unstructured
   sourceType: helm
   helm:
-    repo: oci://us-west1-docker.pkg.dev/versa-guardian/helm-charts-app/urm
+    repo: oci://us-west1-docker.pkg.dev/versa-guardian/helm-charts-app
     chart: urm
     version: 0.1.0
     releaseName: urm
